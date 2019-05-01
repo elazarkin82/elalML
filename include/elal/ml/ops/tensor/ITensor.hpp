@@ -12,10 +12,11 @@
 
 namespace elal{
 
-class ITensor::IOp
+class ITensor:public elal::IOp
 {
-
-}
+public:
+	ITensor(){}
+};
 
 }
 #endif /* INCLUDE_ELAL_ML_OPS_TENSOR_ITENSOR_HPP_ */

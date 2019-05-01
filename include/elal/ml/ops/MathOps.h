@@ -14,7 +14,11 @@ namespace math {
 #include "IOp.hpp"
 #include <stdint.h>
 
+elal::IOp *conv(elal::IOp *prev, elal::IOp *kernel, elal::IOp *bias);
+
 elal::IOp *add(elal::IOp *prev, elal::IOp *constTensor);
+
+elal::IOp *mul(elal::IOp *prev, elal::IOp *constTensor);
 
 } /* namespace math */
 } /* namespace elal */
