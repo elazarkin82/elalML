@@ -5,16 +5,17 @@
  *      Author: elazar
  */
 
-#include <elal/ml/ops/tensor/Float2dMatrixTensor.h>
+#include <elal/ml/node/tensor/FloatTensor.h>
+
 #include <stdlib.h>
 #include <stdio.h>
 
-Float2dMatrixTensor::Float2dMatrixTensor(int dx, int dy)
+FloatTensor::FloatTensor(int dx, int dy)
 {
 	m_data = (float *) malloc(dx*dy*sizeof(float));
 }
 
-Float2dMatrixTensor::~Float2dMatrixTensor()
+FloatTensor::~FloatTensor()
 {
 	if(m_data != NULL)
 	{

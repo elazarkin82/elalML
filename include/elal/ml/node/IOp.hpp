@@ -5,8 +5,8 @@
  *      Author: elazar
  */
 
-#ifndef INCLUDE_ELAL_ML_OPS_IOP_HPP_
-#define INCLUDE_ELAL_ML_OPS_IOP_HPP_
+#ifndef INCLUDE_ELAL_ML_NODE_IOP_HPP_
+#define INCLUDE_ELAL_ML_NODE_IOP_HPP_
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -18,8 +18,14 @@ private:
 
 public:
 	IOp(){m_next = NULL;}
+
 	IOp(IOp *next){m_next = next;}
+
 	virtual ~IOp(){}
+
+protected:
+
+	virtual void getOutput(IOp *lastTensor, IOp *lastOp);
 };
 
-#endif /* INCLUDE_ELAL_ML_OPS_IOP_HPP_ */
+#endif /* INCLUDE_ELAL_ML_NODE_IOP_HPP_ */

@@ -5,7 +5,7 @@
  *      Author: elazar
  */
 
-#include <elal/ml/ops/MathOps.h>
+#include <elal/ml/node/MathOps.h>
 
 IOp *conv(IOp *prev, IOp *kernel, IOp *bias)
 {

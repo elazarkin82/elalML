@@ -5,14 +5,15 @@
  *      Author: elazar
  */
 
+#include <elal/ml/node/MathOps.h>
+#include <elal/ml/node/tensor/ITensor.hpp>
 #include <stdlib.h>
 #include <stdio.h>
 
-#include <elal/ml/ops/MathOps.h>
 
 int main()
 {
-	printf("started!\n");
+	ITensor graph();
 
 	return 0;
 }

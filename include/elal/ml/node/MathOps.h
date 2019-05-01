@@ -5,11 +5,11 @@
  *      Author: elazar
  */
 
-#ifndef INCLUDE_ELAL_ML_OPS_MATHOPS_H_
-#define INCLUDE_ELAL_ML_OPS_MATHOPS_H_
+#ifndef INCLUDE_ELAL_ML_NODE_MATHOPS_H_
+#define INCLUDE_ELAL_ML_NODE_MATHOPS_H_
 
-#include "IOp.hpp"
 #include <stdint.h>
+#include "../node/IOp.hpp"
 
 IOp *conv(IOp *prev, IOp *kernel, IOp *bias);
 
@@ -17,4 +17,4 @@ IOp *add(IOp *prev, IOp *constTensor);
 
 IOp *mul(IOp *prev, IOp *constTensor);
 
-#endif /* INCLUDE_ELAL_ML_OPS_MATHOPS_H_ */
+#endif /* INCLUDE_ELAL_ML_NODE_MATHOPS_H_ */
