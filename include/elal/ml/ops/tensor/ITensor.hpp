@@ -10,13 +10,10 @@
 
 #include <elal/ml/ops/IOp.hpp>
 
-namespace elal{
-
-class ITensor:public elal::IOp
+class ITensor:public IOp
 {
 public:
 	ITensor(){}
 };
 
-}
 #endif /* INCLUDE_ELAL_ML_OPS_TENSOR_ITENSOR_HPP_ */

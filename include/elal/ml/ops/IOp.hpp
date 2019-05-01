@@ -8,9 +8,6 @@
 #ifndef INCLUDE_ELAL_ML_OPS_IOP_HPP_
 #define INCLUDE_ELAL_ML_OPS_IOP_HPP_
 
-namespace elal
-{
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -24,7 +21,5 @@ public:
 	IOp(IOp *next){m_next = next;}
 	virtual ~IOp(){}
 };
-
-} /* namespace elal */
 
 #endif /* INCLUDE_ELAL_ML_OPS_IOP_HPP_ */

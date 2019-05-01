@@ -8,19 +8,13 @@
 #ifndef INCLUDE_ELAL_ML_OPS_MATHOPS_H_
 #define INCLUDE_ELAL_ML_OPS_MATHOPS_H_
 
-namespace elal {
-namespace math {
-
 #include "IOp.hpp"
 #include <stdint.h>
 
-elal::IOp *conv(elal::IOp *prev, elal::IOp *kernel, elal::IOp *bias);
+IOp *conv(IOp *prev, IOp *kernel, IOp *bias);
 
-elal::IOp *add(elal::IOp *prev, elal::IOp *constTensor);
+IOp *add(IOp *prev, IOp *constTensor);
 
-elal::IOp *mul(elal::IOp *prev, elal::IOp *constTensor);
-
-} /* namespace math */
-} /* namespace elal */
+IOp *mul(IOp *prev, IOp *constTensor);
 
 #endif /* INCLUDE_ELAL_ML_OPS_MATHOPS_H_ */

@@ -8,12 +8,11 @@
 #ifndef INCLUDE_ELAL_ML_OPS_TENSOR_FLOAT2DMATRIXTENSOR_H_
 #define INCLUDE_ELAL_ML_OPS_TENSOR_FLOAT2DMATRIXTENSOR_H_
 
-namespace elal
-{
+//namespace elal{
 
 #include "ITensor.hpp"
 
-class Float2dMatrixTensor: public elal::ITensor
+class Float2dMatrixTensor: public ITensor
 {
 private:
 	float *m_data;
@@ -24,6 +23,6 @@ public:
 	virtual ~Float2dMatrixTensor();
 };
 
-} /* namespace elal */
+//} /* namespace elal */
 
 #endif /* INCLUDE_ELAL_ML_OPS_TENSOR_FLOAT2DMATRIXTENSOR_H_ */

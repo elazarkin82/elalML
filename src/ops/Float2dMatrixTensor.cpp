@@ -9,8 +9,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-namespace elal {
-
 Float2dMatrixTensor::Float2dMatrixTensor(int dx, int dy)
 {
 	m_data = (float *) malloc(dx*dy*sizeof(float));
@@ -23,5 +21,3 @@ Float2dMatrixTensor::~Float2dMatrixTensor()
 		free(m_data);
 	}
 }
-
-} /* namespace elal */

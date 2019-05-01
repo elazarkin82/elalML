@@ -7,27 +7,20 @@
 
 #include <elal/ml/ops/MathOps.h>
 
-namespace elal {
-namespace math {
-
-elal::IOp *conv(elal::IOp *prev, elal::IOp *kernel, elal::IOp *bias)
+IOp *conv(IOp *prev, IOp *kernel, IOp *bias)
 {
 	// TODO
 	return NULL;
 }
 
-elal::IOp *add(elal::IOp *prev, elal::IOp *constTensor)
+IOp *add(IOp *prev, IOp *constTensor)
 {
 	// TODO
 	return NULL;
 }
 
-elal::IOp *mul(elal::IOp *prev, elal::IOp *constTensor)
+IOp *mul(IOp *prev, IOp *constTensor)
 {
 	// TODO
 	return NULL;
 }
-
-
-} /* namespace math */
-} /* namespace elal */
